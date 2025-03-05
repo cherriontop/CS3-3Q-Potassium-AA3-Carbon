@@ -1,13 +1,13 @@
 function callAFunction() {
-	let Message = prompt('Enter the message:');
+	let message = prompt('Enter the message:');
 	
-	if (Message.includes("FR")|| Message.includes("FR") && Message.includes("AI")) {
-		document.getElementById('result').innerHTML = "The message" + Message + "is legitimate.";		
+	if (message.includes("FR")|| message.includes("FR") && message.includes("AI")) {
+		document.getElementById('result').innerHTML = "The message" + message + "is legitimate.";		
 	}
-	else if (Message.includes("AI") || Message.includes("aI") || Message.includes("ai")) {
-		document.getElementById('result').innerHTML = "The message " + Message + "is tampered with.";
+	else if (message.includes("AI") || message.includes("aI") || message.includes("ai")) {
+		document.getElementById('result').innerHTML = "The message " + message + "is tampered with.";
 	}
 	else {
-		document.getElementById('result').innerHTML = "The message " + Message + " is yet to be encoded.";
+		document.getElementById('result').innerHTML = "The message " + message + " is yet to be encoded.";
 	}
 }
